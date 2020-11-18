@@ -1,0 +1,140 @@
+.cursor, .follow {
+  position: absolute;
+  pointer-events: none;
+  width: 0.4rem;
+  height: 0.4rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100000;
+}
+
+.cursor {
+  background-color: white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+}
+
+h1:hover .cursor {
+  width: 100px;
+}
+
+.cursor::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+}
+
+nav .nav-menu {
+  position: fixed;
+  background-color: #1b1b1b;
+  right: -100%;
+  height: 100%;
+  padding: 5vmin 15vmin 0vmin 10vmin;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav .nav-menu .nav-item {
+  margin: 5vmin;
+}
+
+nav .nav-menu .nav-item a {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10vmin;
+  position: relative;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav .nav-menu .nav-item a:hover {
+  text-decoration: none;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+  color: #d90d4f;
+}
+
+nav .open {
+  right: 0;
+}
+
+nav .navigation div {
+  position: fixed;
+  right: 0;
+}
+
+nav .navigation div .ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+nav .navigation div .hamRotate.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav .navigation div .hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+nav .navigation div .line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: white;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+nav .navigation div .ham6 .top {
+  stroke-dasharray: 40 172;
+}
+
+nav .navigation div .ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+
+nav .navigation div .ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+
+nav .navigation div .ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+
+nav .navigation div .ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+
+nav .navigation div .ham6.active .bottom {
+  stroke-dashoffset: -132px;
+}
+/*# sourceMappingURL=nav.css.map */
