@@ -84,6 +84,13 @@ header{
                 position: relative;
                 @include Transform-middle;
                 overflow: hidden;
+                // .panel-h1{
+                //     // background-color: lawngreen;
+                // }
+                .panel-p{
+                    position: relative;
+                    // background-color: red;
+                }
             }
             .vartical-line{
                 height: 100%;
@@ -216,61 +223,7 @@ header{
 // .section4{
 //     padding: 20vmin 0;
 // }
-footer{
-    // height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    .connect-section{
-        background-image: linear-gradient(90deg, #0F2027, #203A43, #203A43);
-        .container{
-            padding: 20vmin 0;
-            color: white;
-            width: 100%;
-            h1{
-                font-weight: 900;
-                font-size: 15vmin;
-                padding-bottom: 20px
-            }
-            .footer-a{
-                color: white;
-                background-color: none;
-                padding: 2vmin 3vmin;
-                border: 2px solid white;
-                border-radius: 5px;
-                font-weight: 500;
-                font-size: 3vmin;
-                transition: 0.3s;
-                &:hover{
-                    background-color: white;
-                    color: #203A43;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    .social-media-section{
-        background-color: #0e0e0e;
-        padding: 8vmin;
-        .icon-group{
-            padding: 2vmin 0;
-            a{
-                color: white;
-                i{
-                    height: 50px;
-                    width: 50px;
-                    line-height: 50px;
-                    background-color: none;
-                    border: 2px solid white;
-                    border-radius: 25px;
-                    transition: 0.3s;
-                    &:hover{
-                        background-color: white;
-                        color: #0e0e0e;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 
 // Media 
@@ -279,5 +232,10 @@ footer{
 @media screen and (max-width: 769px){
     .cursor-image{
         display: none;
+    }
+    .panel{
+        .panel-p{
+            margin-top: 30vmin;
+        }
     }
 }

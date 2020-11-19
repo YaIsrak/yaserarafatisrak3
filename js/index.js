@@ -42,22 +42,6 @@ if(cursor){
 
 
 
-
-
-// Navigation
-//===============
-function openNav(){
-  y = document.getElementById("nav-menu");
-  if(y.className == "nav-menu"){
-    y.className += " open";
-  }else{
-    y.className = "nav-menu"
-  }
-}
-
-
-
-
 // gsap animation
 //====================
 const tl1 = gsap.timeline({ defaults: { ease: "Circ.out" } });

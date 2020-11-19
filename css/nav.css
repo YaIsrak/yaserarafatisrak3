@@ -137,4 +137,72 @@ nav .navigation div .ham6.active .middle {
 nav .navigation div .ham6.active .bottom {
   stroke-dashoffset: -132px;
 }
+
+footer {
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .connect-section {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0F2027), color-stop(#203A43), to(#203A43));
+  background-image: linear-gradient(90deg, #0F2027, #203A43, #203A43);
+}
+
+footer .connect-section .container {
+  padding: 20vmin 0;
+  color: white;
+  width: 100%;
+}
+
+footer .connect-section .container h1 {
+  font-weight: 900;
+  font-size: 15vmin;
+  padding-bottom: 20px;
+}
+
+footer .connect-section .container .footer-a {
+  color: white;
+  background-color: none;
+  padding: 2vmin 3vmin;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 3vmin;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .connect-section .container .footer-a:hover {
+  background-color: white;
+  color: #203A43;
+  text-decoration: none;
+}
+
+footer .social-media-section {
+  background-color: #0e0e0e;
+  padding: 8vmin;
+}
+
+footer .social-media-section .icon-group {
+  padding: 2vmin 0;
+}
+
+footer .social-media-section .icon-group a {
+  color: white;
+}
+
+footer .social-media-section .icon-group a i {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background-color: none;
+  border: 2px solid white;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .social-media-section .icon-group a i:hover {
+  background-color: white;
+  color: #0e0e0e;
+}
 /*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,56 @@
+@mixin Transform-middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin Transform-middle-2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+body{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+img{
+    width:100%;
+    padding: 3vmin 1vmin ;
+    position: relative;
+    left: 50%;
+    transition: 0.3s;
+    transform: translateX(-50%);
+    &:hover{
+        width: 110%;
+    }
+}
+.section{
+    background-color: #0e0e0e;
+    padding-bottom: 20vmin;
+    .intro{
+        .intro-text{
+            padding: 10vmin 0 5vmin 0;
+            h1{
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                font-weight: 500;
+                transition: 0.3s;
+                &:hover{
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px){
+    img:hover{
+        width: 100%;
+    }
+}
